@@ -12,7 +12,7 @@ const productos = [
 
 function filtrar(precioLimite){
     const filtrado = productos.filter(p => p.precio < precioLimite); //sintaxis de la funcion: elemento -> se va a evaluar con la condición -> condición (regresó un nuevo arreglo)
-    console.log(`---------------------------Listado filtrado (precio < ${precioLimite} $)-------------------`)
+    console.log(`---------------------------Listado filtrado (precio < $${precioLimite})-------------------`)
     imprimir(filtrado)
 }
 
@@ -44,10 +44,10 @@ function imprimir(lista){
     }
 }
 
-//filtrar(100)
-//ordernar()
+filtrar(700)
+ordernar()
 nombrar()
-//imprimir(productos)
+
 
 
 
